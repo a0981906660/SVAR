@@ -71,17 +71,6 @@
       ],
       "Hash": "e749cae40fa9ef469b6050959517453c"
     },
-    "Rmisc": {
-      "Package": "Rmisc",
-      "Version": "1.5.1",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "lattice",
-        "plyr"
-      ],
-      "Hash": "c3c3d6c3abc276bc7849835d5d54c44d"
-    },
     "bit": {
       "Package": "bit",
       "Version": "4.0.5",
