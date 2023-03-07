@@ -7,17 +7,20 @@ rm(list = ls())
 source("./code/utility/utils.R")
 
 #' @section Load data
-path_data = "./data/cleaned_data/df.csv"
-data <- read_csv(file = path_data)
+path_data = "./data/cleaned_data/data.RDS"
+data <- readRDS(file = path_data)
 
 #' Preprocessing
 data <- data %>% 
-    mutate(Date = as.Date(Date))
+    mutate(date = as.Date(date))
+
+#' Time Serie Variables
+#' yt = [Rt rgdpt rmrt, loant ccostt sentt hpt]′
 
 #' @title Figure 1
 # Make multiple plots
-fig_list <- create_multiple_time_series(data, "Date", 
-                                        c("R", "Sent", "Permit_TW1", "Loan3", "hp_tw"))
+fig_list <- create_multiple_time_series(data, "date", 
+                                        c("R", "rGDP", "rmr2", "loan", "ccost", "sent", "hp"))
 fig <- make_multiple_plots(fig_list)
 
 # Save figure

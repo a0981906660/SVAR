@@ -11,7 +11,8 @@ pkgLoad <- function( packages = "requirements" ) {
                    "cowplot",
                    "lubridate",
                    "xtable",
-                   "assertthat"
+                   "assertthat",
+                   "openxlsx"
                    )
   }
   

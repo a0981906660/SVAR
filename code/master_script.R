@@ -16,6 +16,7 @@ require(matrixcalc)
 library(lattice)
 library(cowplot)
 library(xtable)
+library(openxlsx)
 
 #' @section Pull data from several resources (hand collection)
 
